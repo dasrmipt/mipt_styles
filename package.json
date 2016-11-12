@@ -1,0 +1,21 @@
+{
+  "name": "dasr_css",
+  "version": "1.0.0",
+  "description": "stylesheets for dasr.mipt.ru",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/fakimipt/style.git"
+  },
+  "keywords": [
+    "dasr",
+    "mipt",
+    "css"
+  ],
+  "author": "Vladimir Panov",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/fakimipt/style#readme"
+}
