@@ -50,3 +50,7 @@ docs/.jekyll-metadata
 # Folders to ignore
 bower_components
 node_modules
+
+#Styleguide docs
+docs/*
+css/*

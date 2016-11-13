@@ -4,6 +4,9 @@
   "description": "stylesheets for dasr.mipt.ru",
   "main": "index.js",
   "scripts": {
+    "gulp:sass": "gulp sass",
+    "gulp:sasswatch": "gulp sass:watch",
+    "gulp:styleguide": "gulp styleguide",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,5 +20,9 @@
   ],
   "author": "Vladimir Panov",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/fakimipt/style#readme"
+  "homepage": "https://bitbucket.org/fakimipt/style",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "sc5-styleguide": "^1.3.1"
+  }
 }

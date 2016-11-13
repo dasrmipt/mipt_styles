@@ -1,0 +1,37 @@
+@charset "UTF-8";
+/*
+Типография
+
+Styleguide 1.0
+*/
+/*
+Заголовки в стиле ФАКИ
+
+
+.faki-header      - Универсальный заголовок
+h1.faki-header    - Заголовок для h1
+
+Styleguide 1.1
+*/
+/*
+Универсальный заголовок
+
+markup:
+<span class="faki-header">FAKI header</span>
+
+Styleguide 1.1.1
+*/
+.faki-header {
+  font: normal 16px/22px Tahoma, sans-serif;
+  color: #000066; }
+
+/*
+Заголовок h1 в стирле ФАКИ
+
+markup:
+<h1 class="faki-header">h1 FAKI-header</span>
+
+Styleguide 1.1.2
+*/
+h1.faki-header {
+  font-size: 32px; }
