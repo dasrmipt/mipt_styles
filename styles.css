@@ -1,22 +1,27 @@
+//DONE
 <div>#topmenu {
     border-bottom: 1px solid #000066;
 }
 
+//DONE
 #topnav li.act {
     border-left: 1px solid #000066;
     border-top: 1px solid #000066;
     border-right: 1px solid #000066;
 }
 
+//DONE
 .navblock {
     border-top: 1px solid #000066;
     border-bottom: 1px solid #000066;
 }
 
+//DONE
 #footer {
     border-top: 3px solid #000066;
 }
 
+//DONE
 #news-head {
     border-bottom: 3px solid #000066;
 }
@@ -37,22 +42,27 @@
     border-bottom: 3px solid #000066;
 }
 
+//DONE
 a {
     color: #000066
 }
 
+//DONE
 .news-title {
     color: #000066;
 }
 
+//DONE
 #mainblock h1 {
     border-bottom: 3px solid #000066
 }
 
+//DONE
 #news-archive {
     color: #000066;
 }
 
+//DONE
 #news-archive a {
     color: #000066;
 }
@@ -61,10 +71,12 @@ table.cal-table td.act a.cal-news-title {
     color: #000066;
 }
 
+//DONE
 #leftmenu a.act {
     border: 3px solid #000066;
 }
 
+//DONE
 #leftmenu a:hover {
     border: 3px solid #000066;
     border-width: 0px 3px;
@@ -238,6 +250,7 @@ li.current a {
     display: inline-block;
 }
 
+//DONE
 .faki-header, h2.faki-header {
     font: normal 16px/22px Tahoma;
     color: #000066;
