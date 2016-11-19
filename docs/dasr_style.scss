@@ -25,7 +25,7 @@
 }
 
 #mainblock h1 {
-    border-bottom: 3px solid #000066
+    border-bottom: 3px solid $primary_color;
 }
 
 #footer {
@@ -60,6 +60,7 @@
 
 /* Конец блока новостей */
 
+/* Left sidebar */
 /* Левое меню */
 #leftmenu a.act {
     border: 3px solid $primary_color;
@@ -69,4 +70,3 @@
     border: 3px solid $primary_color;
     border-width: 0px 3px;
 }
-/* Конец левого меню */

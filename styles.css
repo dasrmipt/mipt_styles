@@ -4,6 +4,7 @@
 }
 
 //DONE
+//UNUSED
 #topnav li.act {
     border-left: 1px solid #000066;
     border-top: 1px solid #000066;
@@ -26,18 +27,22 @@
     border-bottom: 3px solid #000066;
 }
 
+//UNUSED
 #cal-title {
     border-bottom: 3px solid #000066;
 }
 
+//UNUSED
 #quote-title {
     border-bottom: 3px solid #000066;
 }
 
+//UNUSED
 #cont-title {
     border-bottom: 3px solid #000066;
 }
 
+//UNUSED
 #all-news-head {
     border-bottom: 3px solid #000066;
 }
@@ -67,11 +72,13 @@ a {
     color: #000066;
 }
 
+//UNUSED
 table.cal-table td.act a.cal-news-title {
     color: #000066;
 }
 
 //DONE
+//UNUSED
 #leftmenu a.act {
     border: 3px solid #000066;
 }
@@ -82,26 +89,32 @@ table.cal-table td.act a.cal-news-title {
     border-width: 0px 3px;
 }
 
+//UNUSED
 #leftmenu .leftsubmenu li.subact a {
     color: #000066;
 }
 
+//UNUSED
 #leftmenu .leftsubmenu li.subact {
     border: 3px solid #000066;
 }
 
+//UNUSED
 #leftmenu .leftsubmenu li:hover {
     border: 3px solid #000066;
 }
 
+//UNUSED
 #filterblock a.act {
     border: 3px solid #000066;
 }
 
+//UNUSED
 #filterblock a:hover {
     border: 3px solid #000066;
 }
 
+//UNUSED
 .event-title {
     color: #000066;
 }
@@ -110,6 +123,7 @@ table.cal-table td.act a.cal-news-title {
     border-bottom: 3px solid #000066;
 }
 
+//UNUSED
 #vg-desc {
     border-left: 3px solid #000066;
 }
@@ -118,38 +132,46 @@ div.head_dasr {
     background: url(images/head.jpg) no-repeat center top;
 }
 
+//UNUSED
 #top-lang a.act {
     background: url(images/langselect.png) no-repeat right center !important;
     color: #ffffff;
 }
 
+//UNUSED
 div.bx_logged_in input.top_logout {
     background: url(images/ico-auth.png) no-repeat left center !important;
     color: #000066 !important;
 }
 
+//UNUSED
 a.top_auth {
     background: url(images/ico-auth.png) no-repeat left center !important;
     color: #000066 !important;
 }
 
+//UNUSED
 #leftmenu .root-item-selected, #leftmenu .item-selected {
     border-left: #000066 3px solid !important;
     border-right: #000066 3px solid !important;
 }
 
+//UNUSED
 #gotop {
     background: url(images/button_to.png) !important;
 }
 
+//UNUSED
 div.ajax_on {
     background: url(images/button_ajax_2.png) !important;
 }
 
+//UNUSED
 div.ajax_off {
     background: url(images/button_ajax_1.png) !important;
 }
 
+//DONE
 #banner h2 {
     float: left;
     font: normal 18px/30px Tahoma;
@@ -160,10 +182,12 @@ div.ajax_off {
     width: 100%;
 }
 
+//DONE
 #banner h2 a {
     text-decoration: none;
 }
 
+//UNUSED
 #top-sitemap {
     background: url(images/ico-sitemap.png) no-repeat right center !important;
 }
@@ -187,6 +211,7 @@ div.ajax_off {
     width: 614px;
 }
 
+//UNUSED
 div.bx_system_auth_form {
     font-size: 14px;
     display: block;
@@ -205,10 +230,12 @@ div.bx_system_auth_form {
     background: linear-gradient(top, #aaa, #ccc);
 }
 
+//UNUSED
 div.bx_system_auth_form input.input_submit {
     color: #267326 !important;
 }
 
+//UNUSED
 div.bx_system_auth_form input.input_submit:hover {
     color: #39ac39 !important;
 }
@@ -776,22 +803,24 @@ div.faki-mitem p, .faki-tabs-caption li p {
 
 
 /*webdebug:safe2pdf.controls*/
-
+//UNUSED
 #page-export-controls-pdf {
     background: url(&amp;quot;images/pdf.png&amp;quot;);
 }
 
+//UNUSED
 #page-export-controls-doc {
     background: url(&amp;quot;images/doc.png&amp;quot;);
 }
 
+//UNUSED
 #page-export-controls-print {
     background: url(&amp;quot;images/print.png&amp;quot;);
 }
 
 
 /*bitrix:system.auth.form*/
-
+//UNUSED
 a.top_reg {
     background: url(images/key.png) no-repeat left center !important;
     color: #000066 !important;
