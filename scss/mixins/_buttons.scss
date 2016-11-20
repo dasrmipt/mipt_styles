@@ -1,0 +1,61 @@
+@import "mixins/gradients";
+
+@mixin base_button($start_color, $end_color, $start-percent: 0%, $end-percent: 100%) {
+  display: inline-block;
+  overflow: hidden;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-width: inherit;
+  margin: 2px;
+  min-width: 120px;
+  text-align: center;
+  font-family: arial;
+  width: auto;
+  color: #FFFFff;
+  text-decoration: none;
+  background: $start_color;
+  @include gradient-y($start_color, $end_color, $start-percent, $end-percent);
+  border-radius: 5px;
+
+  a {
+      color: #FFFFff;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: none;
+      }
+  }
+}
+
+@mixin base_modern_button($shadow_color, $border_color, $start_color, $end_color, $start-percent: 0%, $end-percent: 100%) {
+  box-shadow: inset -1px 0px 0px 0px $shadow_color;
+  @include gradient-y($start_color, $end_color, $start-percent, $end-percent);
+  border-radius: 8px;
+  border: 1px solid $border-color;
+  display: inline-block;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  height: 33px;
+  line-height: 33px;
+  width: auto;
+  text-decoration: none;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  &:hover {
+      @include gradient-y($end_color, $start_color, $start-percent, $end-percent);
+      background-color: $end_color;
+      text-decoration: none;
+  }
+
+  &:active {
+      position: relative;
+      top: 1px;
+  }
+}

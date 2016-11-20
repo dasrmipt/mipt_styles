@@ -4,10 +4,16 @@ var gulp = require('gulp');
 var styleguide = require('sc5-styleguide');
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
+var autoprefixer = require('gulp-autoprefixer');
+
+var includePaths = ["node_modules/bootstrap/scss"];
 
 gulp.task('sass', function () {
   return gulp.src('./scss/**/*.scss')
-    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+    .pipe(sass({outputStyle: 'compressed',
+                includePaths: includePaths
+      }).on('error', sass.logError))
+    .pipe(autoprefixer("last 1 version", "> 1%", "ie 8", "ie 7"))
     .pipe(sourcemaps.write('./maps'))
     .pipe(gulp.dest('./css'));
 });

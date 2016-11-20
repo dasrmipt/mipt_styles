@@ -1,0 +1,103 @@
+@import "mixins/transition";
+@import "mixins/buttons";
+
+.faki_blue_button_sp {
+    @include base_button(#173F87, #0454a8);
+}
+
+.faki_green_button_sp {
+    @include base_button(#006600, #339933);
+    border: 1px solid #339933;
+}
+
+.faki_blue_button_sp_modern {
+    @include base_modern_button(#97c4fe, #337fed, #3d94f6, #072659, 5, 100);
+}
+
+.faki_green_button_sp_modern {
+    @include base_modern_button(#c1ed9c, #83c41a, #5ae00d, #175203, 5, 100);
+    width: 200px;
+}
+
+.faki-mbutton {
+    @include transition(0.2s all ease);
+    display: table;
+    padding: 7px 15px 8px 15px;
+    border: 2px;
+    font-family: Tahoma;
+    font-size: 22px;
+    text-align: left;
+    /* font-weight: bold; */
+    cursor: pointer;
+    opacity: 0.9;
+
+    &:hover {
+        opacity: 1;
+    }
+
+    &:active {
+        color: white !important;
+        background-color: #191919 !important;
+    }
+
+    &.micon {
+        padding-left: 68px !important;
+    }
+
+    $icons: (
+      box: "./images/box-48.png",
+      ad: "./images/ad-48.png",
+      printer: "./images/printer-48.png",
+      like: "./images/like-48.png",
+      letter: "./images/letter-48.png",
+      watch: "./images/watch-48.png",
+      theatre: "./images/theatre-48.png",
+      vk: "./images/theatre-48.png"
+    );
+
+    @each $name, $image_url in $icons {
+      &.mi#{$name} {
+          background: url(#{$base_img_url + $image_url}) no-repeat 10px center;
+      }
+    }
+
+    $colors: (
+      (blue #2e2f9b white),
+      (white #ffffff #2e2f9b),
+      (lblue #2d87ef white),
+      (red #d9522c white),
+      (pink #ae193e white)
+    );
+    @each $name, $bg_color, $color in $colors {
+      &.mc#{$name} {
+          background-color: $bg_color;
+          color: $color;
+      }
+    }
+}
+
+.faki-youtube {
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    transition: all 200ms ease-out;
+    cursor: pointer;
+
+    .play {
+        background: url(&amp;quot;http://mipt.ru/dasr/css/images/youtube-play.png&amp;quot;) no-repeat center center;
+        background-size: 91px 64px;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        opacity: .8;
+        filter: alpha(opacity=80);
+        transition: all 0.2s ease-out;
+
+        &:hover {
+            opacity: 1;
+            filter: alpha(opacity=100);
+        }
+    }
+}

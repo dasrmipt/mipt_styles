@@ -1,0 +1,42 @@
+.faki-tabs-caption {
+    line-height: 25px;
+    list-style: none;
+
+    li {
+        float: left;
+        display: block;
+        padding: 5px;
+        cursor: pointer;
+        border: 3px solid white;
+        position: relative;
+        margin-left: 0px !important;
+        box-sizing: border-box;
+    }
+
+    .active {
+        color: #444;
+        border: 3px solid #2E2F9A !important;
+    }
+}
+
+.faki-tabs-content {
+    display: none;
+    padding: 5px 5px 5px 0;
+    width: 100%;
+    text-align: center;
+
+    .active {
+        display: table;
+    }
+}
+
+.faki-tabs-block {
+    width: 100%;
+    padding: 5px 5px 5px 0;
+    display: table;
+
+    .faki-tabs-caption {
+        display: table;
+        border-left: 0px solid #FFF;
+    }
+}

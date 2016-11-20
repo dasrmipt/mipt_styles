@@ -1,6 +1,12 @@
 @import "variables";
 
 @import "typography";
+@import "block";
+@import "button";
+@import "items";
+@import "link";
+@import "tabs";
+
 
 /*
   Стиль главного меню сайта МФТИ.
@@ -72,7 +78,7 @@
 
 /* Left sidebar */
 /* Левое меню */
-#leftmenu a.root-item-selected {
+#leftmenu a.root-item-selected, #leftmenu .item-selected {
     border: 3px solid $primary_color !important;
     border-width: 0px 3px !important;
 }

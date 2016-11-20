@@ -150,7 +150,7 @@ a.top_auth {
     color: #000066 !important;
 }
 
-//UNUSED
+//DONE
 #leftmenu .root-item-selected, #leftmenu .item-selected {
     border-left: #000066 3px solid !important;
     border-right: #000066 3px solid !important;
@@ -245,11 +245,13 @@ li.current a {
     border-right-color: #000066 !important;
 }
 
+//DONE
 .faki-block {
     float: left;
     margin-bottom: 10px;
 }
 
+//DONE
 .faki-link {
     float: left;
     clear: left;
@@ -263,16 +265,19 @@ li.current a {
     background-position: left;
 }
 
+//DONE
 .faki-link:hover {
     text-decoration: none;
 }
 
+//DONE
 .faki-block p {
     float: left;
     width: 100%;
     padding-bottom: 10px;
 }
 
+//DONE
 .faki-block ul {
     display: inline-block;
 }
@@ -285,6 +290,7 @@ li.current a {
     font-weight: bold
 }
 
+//DONE
 h4.faki-header {
     font: normal 14px/16px Tahoma;
     color: #000066;
@@ -298,6 +304,7 @@ h4.faki-header {
     -webkit-box-shadow: #999 2px 2px 3px;
 }
 
+//DONE
 .faki-section {
     margin: 10px;
     padding: 15px 20px 15px 20px;
@@ -315,6 +322,7 @@ h4.faki-header {
     display: inline-block;
 }
 
+//DONE
 .faki_blue_button_sp {
     display: inline-block;
     overflow: hidden;
@@ -347,15 +355,18 @@ h4.faki-header {
     khtml-border-radius: 4px
 }
 
+//DONE
 .faki_blue_button_sp a {
     color: #FFFFff;
     text-decoration: none;
 }
 
+//DONE
 .faki_blue_button_sp a:hover {
     text-decoration: none;
 }
 
+//DONE
 .faki_green_button_sp {
     display: inline-block;
     overflow: hidden;
@@ -389,21 +400,25 @@ h4.faki-header {
     khtml-border-radius: 4px
 }
 
+//DONE
 .faki_green_button_sp a {
     color: #FFFFff;
     text-decoration: none;
 }
 
+//DONE
 .faki_green_button_sp a:hover {
     text-decoration: none;
 }
 
+//DONE
 .sect-block {
     padding-bottom: 1px;
     font-weight: normal;
     margin: 0.2cm;
 }
 
+//DONE
 .faki-sect-block {
     padding-bottom: 1px;
     font-weight: normal;
@@ -413,6 +428,7 @@ h4.faki-header {
     vertical-align: top;
 }
 
+//DONE
 .faki_blue_button_sp_modern {
     -moz-box-shadow: inset -1px 0px 0px 0px #97c4fe;
     -webkit-box-shadow: inset -1px 0px 0px 0px #97c4fe;
@@ -450,6 +466,7 @@ h4.faki-header {
     padding-right: 10px;
 }
 
+//DONE
 .faki_blue_button_sp_modern:hover {
     background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #072659), color-stop(1, #3d94f6));
     background: -moz-linear-gradient( center top, #072659 5%, #3d94f6 100%);
@@ -458,11 +475,13 @@ h4.faki-header {
     text-decoration: none;
 }
 
+//DONE
 .faki_blue_button_sp_modern:active {
     position: relative;
     top: 1px;
 }
 
+//DONE
 .faki_green_button_sp_modern {
     -moz-box-shadow: inset -1px 0px 0px 0px #c1ed9c;
     -webkit-box-shadow: inset -1px 0px 0px 0px #c1ed9c;
@@ -500,6 +519,7 @@ h4.faki-header {
     padding-right: 10px;
 }
 
+//DONE
 .faki_green_button_sp_modern:hover {
     text-decoration: none;
     background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #175203), color-stop(1, #5ae00d));
@@ -508,35 +528,42 @@ h4.faki-header {
     background-color: #175203;
 }
 
+//DONE
 .faki_green_button_sp_modern:active {
     position: relative;
     top: 1px;
 }
 
+//DONE
 div.faki-msection {
     display: inline-block;
     box-sizing: border-box;
     margin: 5px 0 0 0;
 }
 
+//DONE
 .faki-col1 div, .faki-col1 li {
     width: 100%;
 }
 
+//DONE
 .faki-col2 div, .faki-col2 li {
     width: 50%;
     float: left;
 }
 
+//DONE
 .faki-col3 {
     width: 99%;
 }
 
+//DONE
 .faki-col3 div, .faki-col3 li {
     width: 33%;
     float: left;
 }
 
+//DONE
 .faki-mbutton {
     transition: 0.2s all ease;
     -moz-transition: 0.2s all ease;
@@ -545,6 +572,7 @@ div.faki-msection {
     -ms-transition: 0.2s all ease;
 }
 
+//DONE
 .faki-mbutton {
     display: table;
     padding: 7px 15px 8px 15px;
@@ -561,80 +589,98 @@ div.faki-msection {
     opacity: 0.9;
 }
 
+//DONE
 .faki-mbutton:hover {
     opacity: 1;
 }
 
+//DONE
 .faki-mbleft:hover {
     border-left: solid 2px #2e2f9b;
 }
 
+//DONE
 .faki-mbutton:active {
     color: white !important;
     background-color: #191919 !important;
 }
 
+//DONE
 .faki-mbutton.micon {
     padding-left: 68px !important;
 }
 
+//DONE
 .faki-mbutton.mibox {
     background: url(./images/box-48.png) no-repeat 10px center;
 }
 
+//DONE
 .faki-mbutton.miad {
     background: url(./images/ad-48.png) no-repeat 10px center;
 }
 
+//DONE
 .faki-mbutton.miprinter {
     background: url(./images/printer-48.png) no-repeat 10px center;
 }
 
+//DONE
 .faki-mbutton.milike {
     background: url(./images/like-48.png) no-repeat 10px center;
 }
 
+//DONE
 .faki-mbutton.miletter {
     background: url(./images/letter-48.png) no-repeat 10px center;
 }
 
+//DONE
 .faki-mbutton.miwatch {
     background: url(./images/watch-48.png) no-repeat 10px center;
 }
 
+//DONE
 .faki-mbutton.mitheatre {
     background: url(./images/theatre-48.png) no-repeat 10px center;
 }
 
+//DONE
 .faki-mbutton.mivk {
     background: url(./images/vk-48.png) no-repeat 10px center;
 }
 
+//DONE
 .faki-mbutton.mcblue {
     background-color: #2e2f9b;
     color: white;
 }
 
+//DONE
 .faki-mbutton.mcwhite {
     background-color: #ffffff;
     color: #2e2f9b;
 }
 
+//DONE
 .faki-mbutton.mclblue {
     background-color: #2d87ef;
     color: white;
 }
 
+//DONE
 .faki-mbutton.mcred {
     background-color: #d9522c;
     color: white;
 }
 
+//DONE
 .faki-mbutton.mcpink {
     background-color: #ae193e;
     color: white;
 }
 
+//DONE
 div.faki-msection a {
     display: table;
     width: 100%;
@@ -644,6 +690,7 @@ div.faki-msection a {
     box-sizing: inherit;
 }
 
+//DONE
 div.faki-mitem .sb-headlink, .faki-tabs-caption li a {
     display: inherit;
     width: 100%;
@@ -654,6 +701,7 @@ div.faki-mitem .sb-headlink, .faki-tabs-caption li a {
     font: normal 15px/20px sans-serif;
 }
 
+//DONE
 div.faki-mitem p, .faki-tabs-caption li p {
     display: inherit;
     width: 100%;
@@ -663,6 +711,7 @@ div.faki-mitem p, .faki-tabs-caption li p {
     font: normal 12px/22px sans-serif;
 }
 
+//DONE
 .faki-mitem {
     transition: 0.2s all ease;
     -moz-transition: 0.2s all ease;
@@ -671,6 +720,7 @@ div.faki-mitem p, .faki-tabs-caption li p {
     -ms-transition: 0.2s all ease;
 }
 
+//DONE
 .faki-mitem {
     margin: 5px 0;
     display: table;
@@ -683,60 +733,74 @@ div.faki-mitem p, .faki-tabs-caption li p {
     border: 3px solid white;
 }
 
+//DONE
 .faki-mitem:hover, .faki-tabs-caption li:hover, .faki-tabs-block .faki-tabs-caption li:hover {
     opacity: 1;
     border: 3px solid #f0f0f0;
 }
 
+//DONE
 .faki-mitem.mrocket {
     background: url(./images/rocket-logo_48x48.png) no-repeat 5px 5px, linear-gradient(to bottom, transparent 58px, white 58px), linear-gradient(to right, #2E2F9A 58px, transparent 58px)
 }
 
+//DONE
 .faki-mitem.mfaki {
     background: url(./images/faki-logo_48x48.png) no-repeat 5px 5px, linear-gradient(to bottom, transparent 58px, white 58px), linear-gradient(to right, #2E2F9A 58px, transparent 58px)
 }
 
+//DONE
 .faki-mitem.mball {
     background: url(./images/ball-logo_48x48.png) no-repeat 5px 5px, linear-gradient(to bottom, transparent 58px, white 58px), linear-gradient(to right, #2E2F9A 58px, transparent 58px)
 }
 
+//DONE
 .faki-mitem.mbook {
     background: url(./images/book-logo_48x48.png) no-repeat 5px 5px, linear-gradient(to bottom, transparent 58px, white 58px), linear-gradient(to right, #2E2F9A 58px, transparent 58px)
 }
 
+//DONE
 .faki-mitem.mhouse {
     background: url(./images/house-logo_48x48.png) no-repeat 5px 5px, linear-gradient(to bottom, transparent 58px, white 58px), linear-gradient(to right, #2E2F9A 58px, transparent 58px)
 }
 
+//DONE
 .faki-mitem.mhat {
     background: url(./images/hat-logo_48x48.png) no-repeat 5px 5px, linear-gradient(to bottom, transparent 58px, white 58px), linear-gradient(to right, #2E2F9A 58px, transparent 58px)
 }
 
+//DONE
 .faki-mitem.mmenu {
     background: url(./images/menu-logo_48x48.png) no-repeat 5px 5px, linear-gradient(to bottom, transparent 58px, white 58px), linear-gradient(to right, #2E2F9A 58px, transparent 58px)
 }
 
+//DONE
 .faki-mitem.mrub {
     background: url(./images/rub-logo_48x48.png) no-repeat 5px 5px, linear-gradient(to bottom, transparent 58px, white 58px), linear-gradient(to right, #2E2F9A 58px, transparent 58px)
 }
 
+//DONE
 .faki-mitem.mstack {
     background: url(./images/stack-logo_48x48.png) no-repeat 5px 5px, linear-gradient(to bottom, transparent 58px, white 58px), linear-gradient(to right, #2E2F9A 58px, transparent 58px)
 }
 
+//DONE
 .faki-mitem.mmenuwhite {
     background: url(./images/menu-logo-white_48x48.png) no-repeat 5px 5px
 }
 
+//DONE
 .faki-mitem.mlist {
     background: url(./images/list-logo_48x48.png) no-repeat 5px 5px
 }
 
+//DONE
 .faki-tabs-caption {
     line-height: 25px;
     list-style: none;
 }
 
+//DONE
 .faki-tabs-caption li {
     float: left;
     display: block;
@@ -748,11 +812,13 @@ div.faki-mitem p, .faki-tabs-caption li p {
     box-sizing: border-box;
 }
 
+//DONE
 .faki-tabs-caption .active {
     color: #444;
     border: 3px solid #2E2F9A !important;
 }
 
+//DONE
 .faki-tabs-content {
     display: none;
     padding: 5px 5px 5px 0;
@@ -760,21 +826,25 @@ div.faki-mitem p, .faki-tabs-caption li p {
     text-align: center;
 }
 
+//DONE
 .faki-tabs-content .active {
     display: table;
 }
 
+//DONE
 .faki-tabs-block {
     width: 100%;
     padding: 5px 5px 5px 0;
     display: table;
 }
 
+//DONE
 .faki-tabs-block .faki-tabs-caption {
     display: table;
     border-left: 0px solid #FFF;
 }
 
+//DONE
 .faki-youtube {
     background-position: center;
     background-repeat: no-repeat;
@@ -785,6 +855,7 @@ div.faki-mitem p, .faki-tabs-caption li p {
     cursor: pointer;
 }
 
+//DONE
 .faki-youtube .play {
     background: url(&amp;quot;http://mipt.ru/dasr/css/images/youtube-play.png&amp;quot;) no-repeat center center;
     background-size: 91px 64px;
@@ -796,6 +867,7 @@ div.faki-mitem p, .faki-tabs-caption li p {
     transition: all 0.2s ease-out;
 }
 
+//DONE
 .faki-youtube .play:hover {
     opacity: 1;
     filter: alpha(opacity=100);
@@ -843,6 +915,7 @@ quot;
     background: url('/dasr/css/images/map.png') no-repeat right center
 }
 
+//DONE
 .faki-mitem img.mimg {
     background: linear-gradient(to bottom, transparent 58px, white 58px), linear-gradient(to right, #2E2F9A 58px, transparent 58px);
     width: 58px;
@@ -851,6 +924,7 @@ quot;
     float: left;
 }
 
+//DONE
 .faki-mitem img.mwimg {
     background: linear-gradient(to bottom, transparent 58px, white 58px), linear-gradient(to right, #FFFFFF 58px, transparent 58px);
     width: 58px;

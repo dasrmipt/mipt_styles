@@ -1,0 +1,16 @@
+.faki-link {
+    float: left;
+    clear: left;
+    font: normal 16px/22px Tahoma;
+    color: #000066;
+    text-decoration: underline;
+    margin-bottom: 6px;
+    padding-left: 30px;
+    background-image: url($base_img_url + '/design/images/faki_dl');
+    background-repeat: no-repeat;
+    background-position: left;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
