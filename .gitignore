@@ -54,3 +54,4 @@ node_modules
 #Styleguide docs
 docs/*
 css/*
+dest/build/*
