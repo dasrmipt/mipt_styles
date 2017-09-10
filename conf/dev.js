@@ -48,11 +48,12 @@ module.exports = function (env) {
                 options: {
                     sassLoader: {
                         includePaths: [
-                            './node_modules',
-                        ]
+                            './node_modules'
+                        ],
+                        sourceMap: true
                     }
                 }
-            }),
+            })
         ]
     })
 };

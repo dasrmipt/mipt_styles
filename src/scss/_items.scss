@@ -39,20 +39,20 @@ div.faki-mitem p, .faki-tabs-caption li p {
 }
 
 $items_map: (
-  (rocket "./images/rocket-logo_48x48.png"),
-  (faki "./images/faki-logo_48x48.png"),
-  (ball "./images/ball-logo_48x48.png"),
-  (book "./images/book-logo_48x48.png"),
-  (house "./images/house-logo_48x48.png"),
-  (hat "./images/hat-logo_48x48.png"),
-  (menu "./images/menu-logo_48x48.png"),
-  (rub "./images/rub-logo_48x48.png"),
-  (stack "./images/stack-logo_48x48.png")
+  (rocket "rocket-logo_48x48.png"),
+  (faki "faki-logo_48x48.png"),
+  (ball "ball-logo_48x48.png"),
+  (book "book-logo_48x48.png"),
+  (house "house-logo_48x48.png"),
+  (hat "hat-logo_48x48.png"),
+  (menu "menu-logo_48x48.png"),
+  (rub "rub-logo_48x48.png"),
+  (stack "stack-logo_48x48.png")
 );
 
 @each $name, $image_url in $items_map {
   .faki-mitem.m#{$name} {
-    background: url(#{$base_img_url + $image_url}) no-repeat 5px 5px, linear-gradient(to bottom, transparent 58px, white 58px), linear-gradient(to right, #2E2F9A 58px, transparent 58px)
+    background: url(#{$image_path + $image_url}) no-repeat 5px 5px, linear-gradient(to bottom, transparent 58px, white 58px), linear-gradient(to right, #2E2F9A 58px, transparent 58px)
   }
 }
 

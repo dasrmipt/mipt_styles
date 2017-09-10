@@ -1,0 +1,11 @@
+{
+  "source": [
+    "src/scss"
+  ],
+  "destination":  "docs/",
+  "css": [
+    "../dest/styles.css"
+  ],
+  "js": [
+  ]
+}

@@ -25,7 +25,7 @@ const ExtractSCSSTextPlugin = new ExtractTextPlugin("style2.css");
 module.exports = function () {
     return {
         entry: {
-            'index': 'dasr_style.scss',
+            'styles': 'dasr_style.scss',
         },
         module: {
             rules: [
@@ -55,7 +55,6 @@ module.exports = function () {
                             },
                         ]
                     }),
-                    // loader: 'style!css!sass?outputStyle=compressed'
                 },
                 {
                     test: /\.css$/,
@@ -69,9 +68,6 @@ module.exports = function () {
                         'postcss-loader',
                         // 'sass-loader',
                     ],
-
-
-// loader: 'style!css'
                 },
                 {
                     test: /\.(jpe?g|png|gif|svg)$/i,
