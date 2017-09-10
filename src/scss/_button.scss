@@ -86,14 +86,14 @@
     cursor: pointer;
 
     .play {
-        background: url(&amp;quot;http://mipt.ru/dasr/css/images/youtube-play.png&amp;quot;) no-repeat center center;
+        background: url("http://mipt.ru/dasr/css/images/youtube-play.png") no-repeat center center;
         background-size: 91px 64px;
         position: absolute;
         height: 100%;
         width: 100%;
         opacity: .8;
         filter: alpha(opacity=80);
-        transition: all 0.2s ease-out;
+        @include transition(all 0.2s ease-out);
 
         &:hover {
             opacity: 1;

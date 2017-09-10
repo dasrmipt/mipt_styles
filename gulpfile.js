@@ -9,7 +9,7 @@ var autoprefixer = require('gulp-autoprefixer');
 var includePaths = ["node_modules/bootstrap/scss"];
 
 gulp.task('sass', function () {
-  return gulp.src('./scss/**/*.scss')
+  return gulp.src('./src/**/*.scss')
     .pipe(sass({outputStyle: 'compressed',
                 includePaths: includePaths
       }).on('error', sass.logError))
@@ -25,7 +25,7 @@ gulp.task('sass:watch', function () {
 var outputPath = 'docs';
 
 gulp.task('styleguide:generate', function() {
-  return gulp.src('./scss/**/*.scss')
+  return gulp.src('./src/**/*.scss')
     .pipe(styleguide.generate({
         title: 'My Styleguide',
         server: false,
@@ -36,7 +36,7 @@ gulp.task('styleguide:generate', function() {
 });
 
 gulp.task('styleguide:applystyles', function() {
-  return gulp.src('./scss/dasr_style.scss')
+  return gulp.src('./src/dasr_style.scss')
     .pipe(sass({
       errLogToConsole: true
     }))

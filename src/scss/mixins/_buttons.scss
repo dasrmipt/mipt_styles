@@ -1,12 +1,13 @@
-@import "mixins/gradients";
+@import "../../../node_modules/bootstrap/scss/mixins/gradients";
 
 @mixin base_button($start_color, $end_color, $start-percent: 0%, $end-percent: 100%) {
   display: inline-block;
   overflow: hidden;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  // padding-left: 10px;
+  // padding-right: 10px;
+  // padding-top: 5px;
+  // padding-bottom: 5px;
+  padding: 5px 10px;
   border-width: inherit;
   margin: 2px;
   min-width: 120px;

@@ -1,3 +1,4 @@
+@import "variables";
 @import "mixins/transition";
 
 div.faki-mitem .sb-headlink, .faki-tabs-caption li a {
@@ -56,11 +57,11 @@ $items_map: (
 }
 
 .faki-mitem.mmenuwhite {
-    background: url(./images/menu-logo-white_48x48.png) no-repeat 5px 5px
+    background: url(#{$image_path}menu-logo-white_48x48.png) no-repeat 5px 5px
 }
 
 .faki-mitem.mlist {
-    background: url(./images/list-logo_48x48.png) no-repeat 5px 5px
+    background: url(#{$image_path}list-logo_48x48.png) no-repeat 5px 5px
 }
 
 

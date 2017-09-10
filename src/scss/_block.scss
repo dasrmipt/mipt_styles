@@ -1,4 +1,4 @@
-@import "mixins/clearfix";
+@import "~bootstrap/scss/mixins/clearfix";
 
 .faki-block {
     float: left;
@@ -65,6 +65,7 @@ div.faki-msection {
       @include clearfix();
 
       div, li {
+        float: left;
         width: 100% / $num;
       }
   }
