@@ -1,3 +1,6 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+
 // FAKI COLORS
 $faki-color-light: #0072BB;
 $faki-color-dark: #2D358E;
@@ -23,3 +26,8 @@ $max_num_columns: 4;
 $base_img_url: "https://mipt.ru/dasr/css/";
 
 $image_path: "../images/";
+
+
+$faki_mitem_image_width: 58px;
+$faki_mitem_image_height: 58px;
+$faki_mitem_image_margin: 10px;

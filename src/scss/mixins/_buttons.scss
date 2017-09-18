@@ -1,4 +1,4 @@
-@import "../../../node_modules/bootstrap/scss/mixins/gradients";
+@import "~bootstrap/scss/mixins/gradients";
 
 @mixin base_button($start_color, $end_color, $start-percent: 0%, $end-percent: 100%) {
   display: inline-block;
@@ -19,6 +19,7 @@
   background: $start_color;
   @include gradient-y($start_color, $end_color, $start-percent, $end-percent);
   border-radius: 5px;
+  cursor: pointer;
 
   a {
       color: #FFFFff;
@@ -48,6 +49,7 @@
   text-align: center;
   padding-left: 10px;
   padding-right: 10px;
+  cursor: pointer;
 
   &:hover {
       @include gradient-y($end_color, $start_color, $start-percent, $end-percent);

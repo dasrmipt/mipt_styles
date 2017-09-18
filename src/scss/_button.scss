@@ -1,24 +1,79 @@
 @import "mixins/transition";
 @import "mixins/buttons";
+@import "variables";
 
+/*
+    Кнопки
+
+    Styleguide Buttons.
+*/
+
+/*
+    Плоская синяя кнопка
+
+    markup:
+    <a class=" faki_blue_button_sp "> Кнопка 1 </a>
+
+    Styleguide Buttons.BlueBtnSp
+*/
 .faki_blue_button_sp {
     @include base_button(#173F87, #0454a8);
 }
 
+
+/*
+    Плоская зеленая кнопка
+
+    markup:
+    <a class=" faki_green_button_sp "> Кнопка 1 </a>
+
+    Styleguide Buttons.GreenBtnSp
+*/
 .faki_green_button_sp {
     @include base_button(#006600, #339933);
     border: 1px solid #339933;
 }
 
+
+/*
+    Градиентная синяя кнопка
+
+    markup:
+    <a class="faki_blue_button_sp_modern"> Кнопка 1 </a>
+
+    Styleguide Buttons.BlueBtnSpModern
+*/
 .faki_blue_button_sp_modern {
-    @include base_modern_button(#97c4fe, #337fed, #3d94f6, #072659, 5, 100);
+    @include base_modern_button(#97c4fe, #337fed, #3d94f6, #072659, 5%, 100%);
 }
 
+
+/*
+    Градиентная зеленая кнопка
+
+    markup:
+    <a class="faki_green_button_sp_modern"> Кнопка 1 </a>
+
+    Styleguide Buttons.GreenBtnSpModern
+*/
 .faki_green_button_sp_modern {
-    @include base_modern_button(#c1ed9c, #83c41a, #5ae00d, #175203, 5, 100);
+    @include base_modern_button(#c1ed9c, #83c41a, #5ae00d, #175203, 5%, 100%);
     width: 200px;
 }
 
+
+// Кнопка меню
+//
+//
+// markup:
+// <a href="http://mipt.ru" class="faki-mbutton {{modifier_class}}">Ссылка 2 на mipt.ru</a>
+//
+// :hover   - При наведении курсора пропадает некоторая прозрачность
+// .active  - Делает ссылку активной
+// .micon   - Добавляет отступ для иконки
+// .faki-mbleft:hover - Добавляет полоску слева при наведении
+//
+// Styleguide Buttons.MButton
 .faki-mbutton {
     @include transition(0.2s all ease);
     display: table;
@@ -44,23 +99,60 @@
         padding-left: 68px !important;
     }
 
-    $icons: (
-      box: "./images/box-48.png",
-      ad: "./images/ad-48.png",
-      printer: "./images/printer-48.png",
-      like: "./images/like-48.png",
-      letter: "./images/letter-48.png",
-      watch: "./images/watch-48.png",
-      theatre: "./images/theatre-48.png",
-      vk: "./images/theatre-48.png"
+    &.faki-mbleft {
+        border-left: solid 2px transparent;
+        &:hover {
+            border-left: solid 2px #2e2f9b;
+        }
+    }
+
+
+    // Кнопки меню с иконками
+    //
+    // markup:
+    // <a href="http://mipt.ru" class="faki-mbutton micon {{modifier_class}}">Ссылка 2 на mipt.ru</a>
+    //
+    // .mibox - Добавляет картинку ящика
+    // .miad - Добавляет картинку объявления
+    // .miprinter - Добавляет картинку принтера
+    // .milike - Добавляет картинку лайка
+    // .miletter - Добавляет картинку письма
+    // .miwatch - Добавляет картинку часов
+    // .mivk - Добавляет картинку ВК
+    //
+    // Styleguide Buttons.MButton.Icons
+    $faki-mbutton-icons: (
+      box: "box-48.png",
+      ad: "ad-48.png",
+      printer: "printer-48.png",
+      like: "like-48.png",
+      letter: "letter-48.png",
+      watch: "watch-48.png",
+    //   theatre: "theatre-48.png",
+      vk: "vk-48.png"
     );
 
-    @each $name, $image_url in $icons {
+
+    @each $name, $image_url in $faki-mbutton-icons {
       &.mi#{$name} {
-          background: url(#{$base_img_url + $image_url}) no-repeat 10px center;
+          background: url(#{$image_path + $image_url}) no-repeat 10px center;
       }
     }
 
+
+
+    // Кнопки меню цветные
+    //
+    // markup:
+    // <a href="http://mipt.ru" class="faki-mbutton {{modifier_class}}">Ссылка 2 на mipt.ru</a>
+    //
+    // .mcblue - Окрашивает в темносиний
+    // .mcwhite - Окрашивает в белый
+    // .mclblue - Окрашивает в светлосиний
+    // .mcred -  Окрашивает в оранжевый
+    // .mcpink -  Окрашивает в пурпурный
+    //
+    // Styleguide Buttons.MButton.Colors
     $colors: (
       (blue #2e2f9b white),
       (white #ffffff #2e2f9b),
@@ -86,7 +178,7 @@
     cursor: pointer;
 
     .play {
-        background: url("http://mipt.ru/dasr/css/images/youtube-play.png") no-repeat center center;
+        background: url(#{$image_path}youtube-play.png) no-repeat center center;
         background-size: 91px 64px;
         position: absolute;
         height: 100%;

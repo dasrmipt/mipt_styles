@@ -1,82 +1,160 @@
 @import "variables";
 @import "mixins/transition";
 
+//
+// Списки с иконками
+//
+// Styleguide List.
+
+@mixin base-faki-mitem() {
+}
+
+@mixin base-faki-mitem_img_bg($final_color, $img_url:null) {
+  @if ($img_url) {
+    background: url($img_url) no-repeat 5px 5px,
+    linear-gradient(to bottom, transparent $faki_mitem_image_height, white $faki_mitem_image_height),
+    linear-gradient(to right, $final_color $faki_mitem_image_width, transparent $faki_mitem_image_width);
+  } @else {
+    background: linear-gradient(to bottom, transparent $faki_mitem_image_height, white $faki_mitem_image_height),
+    linear-gradient(to right, $final_color $faki_mitem_image_width, transparent $faki_mitem_image_width);
+  }
+}
+
+@mixin base-faki-mitem_img($final_color) {
+  @include base-faki-mitem_img_bg($final_color);
+  width: $faki_mitem_image_width;
+  height: $faki_mitem_image_height;
+  margin: 0 0 0 (-$faki_mitem_image_width - $faki_mitem_image_margin) !important;
+  float: left;
+}
+
+
+// Элемент списка
+//
+// markup:
+// <div class="faki-msection">
+//      <div class="faki-mitem {{modifier_class}}">
+//          <a class="sb-headlink" href="/dasr/abitur/why/reason.html" >Почему нужно поступать на ФАКИ
+//              <p>Абитуриент! Внимательно прочитай это!</p>
+//          </a>
+//      </div>
+// </div>
+//
+// Styleguide List.Item.
 div.faki-mitem .sb-headlink, .faki-tabs-caption li a {
-    display: inherit;
-    width: 100%;
-    padding: 8px;
-    vertical-align: text-bottom;
-    text-decoration: none;
-    box-sizing: inherit;
-    font: normal 15px/20px sans-serif;
+  @include base-faki-mitem();
+  display: inherit;
+  width: 100%;
+  padding: 8px;
+  vertical-align: text-bottom;
+  text-decoration: none;
+  box-sizing: inherit;
+  font: normal 15px/20px sans-serif;
 }
 
 div.faki-mitem p, .faki-tabs-caption li p {
-    display: inherit;
-    width: 100%;
-    vertical-align: text-bottom;
-    box-sizing: inherit;
-    color: black;
-    font: normal 12px/22px sans-serif;
+  display: inherit;
+  width: 100%;
+  vertical-align: text-bottom;
+  box-sizing: inherit;
+  color: black;
+  font: normal 12px/22px sans-serif;
 }
 
 .faki-mitem {
-    @include transition(0.2s all ease);
-    margin: 5px 0;
-    display: table;
-    padding: 0px 0px 0px 68px;
-    text-align: left;
-    cursor: pointer;
-    opacity: 0.9;
-    box-sizing: inherit;
-    min-height: 64px;
-    border: 3px solid white;
+  @include transition(0.2s all ease);
+  margin: 5px 0;
+  display: table;
+  padding: 0px 0px 0px ($faki_mitem_image_width + $faki_mitem_image_margin);
+  text-align: left;
+  cursor: pointer;
+  opacity: 0.9;
+  box-sizing: inherit;
+  min-height: 64px;
+  border: 3px solid white;
 }
 
 .faki-mitem:hover, .faki-tabs-caption li:hover, .faki-tabs-block .faki-tabs-caption li:hover {
-    opacity: 1;
-    border: 3px solid #f0f0f0;
+  opacity: 1;
+  border: 3px solid #f0f0f0;
 }
 
+// Элемент списка с иконкой
+//
+// markup:
+// <div class="faki-msection">
+//      <div class="faki-mitem {{modifier_class}} ">
+//          <a class="sb-headlink" href="/dasr/abitur/why/reason.html" >Почему нужно поступать на ФАКИ
+//              <p>Абитуриент! Внимательно прочитай это!</p>
+//          </a>
+//      </div>
+// </div>
+//
+// .mrocket - Добавляет рокету
+// .mfaki - Добавляет эмблему ФАКИ
+// .mball - Добавляет мяч
+// .mbook - Добавляет книгу
+// .mhouse - Добавляет домик
+// .mhat - Добавляет шляпу
+// .mmenu - Добавляет меню
+// .mrub - Добавляет иконку рубля
+// .mstack - Добавляет кипу книг
+// .mmenuwhite - Добавляет белое меню
+// .mlist - Добавляет список
+//
+// Styleguide List.Item.Icons
+
 $items_map: (
-  (rocket "rocket-logo_48x48.png"),
-  (faki "faki-logo_48x48.png"),
-  (ball "ball-logo_48x48.png"),
-  (book "book-logo_48x48.png"),
-  (house "house-logo_48x48.png"),
-  (hat "hat-logo_48x48.png"),
-  (menu "menu-logo_48x48.png"),
-  (rub "rub-logo_48x48.png"),
-  (stack "stack-logo_48x48.png")
+                (rocket "rocket-logo_48x48.png"),
+                (faki "faki-logo_48x48.png"),
+                (ball "ball-logo_48x48.png"),
+                (book "book-logo_48x48.png"),
+                (house "house-logo_48x48.png"),
+                (hat "hat-logo_48x48.png"),
+                (menu "menu-logo_48x48.png"),
+                (rub "rub-logo_48x48.png"),
+                (stack "stack-logo_48x48.png")
 );
 
 @each $name, $image_url in $items_map {
   .faki-mitem.m#{$name} {
-    background: url(#{$image_path + $image_url}) no-repeat 5px 5px, linear-gradient(to bottom, transparent 58px, white 58px), linear-gradient(to right, #2E2F9A 58px, transparent 58px)
+    @include base-faki-mitem_img_bg($faki-color-dark, $image_path + $image_url);
   }
 }
 
 .faki-mitem.mmenuwhite {
-    background: url(#{$image_path}menu-logo-white_48x48.png) no-repeat 5px 5px
+  background: url(#{$image_path}menu-logo-white_48x48.png) no-repeat 5px 5px;
 }
 
 .faki-mitem.mlist {
-    background: url(#{$image_path}list-logo_48x48.png) no-repeat 5px 5px
+  background: url(#{$image_path}list-logo_48x48.png) no-repeat 5px 5px;
 }
 
 
+// Элемент списка с произовльной иконков
+//
+//  Добавляет возможность добавлять произвольную иконку к элементу списка
+//
+// markup:
+// <div class="faki-msection">
+//      <div class="faki-mitem">
+//          <img src="" class="{{modifier_class}}">
+//          <a class="sb-headlink" href="/dasr/abitur/why/reason.html" >Почему нужно поступать на ФАКИ
+//              <p>Абитуриент! Внимательно прочитай это!</p>
+//          </a>
+//      </div>
+// </div>
+//
+// .mimg - Темный цвет фона
+// .mwimg - Светлый цвет фона
+//
+// Weight: 1
+//
+// Styleguide List.Item.CustomIcons
 .faki-mitem img.mimg {
-    background: linear-gradient(to bottom, transparent 58px, white 58px), linear-gradient(to right, #2E2F9A 58px, transparent 58px);
-    width: 58px;
-    height: 58px;
-    margin: 0 0 0 -68px !important;
-    float: left;
+  @include base-faki-mitem_img($faki-color-dark);
 }
 
 .faki-mitem img.mwimg {
-    background: linear-gradient(to bottom, transparent 58px, white 58px), linear-gradient(to right, #FFFFFF 58px, transparent 58px);
-    width: 58px;
-    height: 58px;
-    margin: 0 0 0 -68px !important;
-    float: left;
+  @include base-faki-mitem_img(#FFFFFF);
 }

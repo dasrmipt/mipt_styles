@@ -3,7 +3,7 @@
  */
 
 
-const baseImgUrl = "/dasr/css/";
+const baseImgUrl = "https://mipt.ru/dasr/css/";
 
 const path = require('path');
 const webpack = require('webpack');

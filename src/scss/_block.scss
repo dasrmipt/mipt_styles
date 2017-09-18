@@ -1,5 +1,23 @@
 @import "~bootstrap/scss/mixins/clearfix";
 
+
+/*
+        Основные блоки в стиле ФАКИ
+
+        Styleguide Blocks.
+*/
+
+
+#mainblock {
+    article {
+        font-family: $font-family-base;
+    }
+}
+
+
+/*
+
+*/
 .faki-block {
     float: left;
     margin-bottom: 10px;
@@ -15,6 +33,17 @@
     }
 }
 
+
+/*
+    Блок-выделение
+
+    Используется для смыслового выделения некоторой информации с помощью рамки
+
+    markup:
+    <div class="faki-section"> Какой-то важный текст </div>
+
+    Styleguide Blocks.Section.
+*/
 .faki-section {
     margin: 10px;
     padding: 15px 20px 15px 20px;
@@ -38,6 +67,21 @@
     margin: 0.2cm;
 }
 
+
+/*
+    Колоночный блок
+
+    Предназначен для страниц, на которых необходимо расположить элементы в 2 колонки.
+    Стиль устанавливает ширину блока,
+        позволяющую им автоматически расползаться в две колонки, оптимально заполняя пространство.
+
+    markup:
+    <div class=" faki-sect-block "> Первый блок с важной информацией </div>
+    <div class=" faki-sect-block"> Второй блок с нужной информацией информацией </div>
+    <div class="faki-sect-block"> Третий блок с информацией, причем редактор просто пишет блоки один за другим. </div>
+
+    Styleguide Blocks.SectBlock.
+*/
 .faki-sect-block {
     @extend .sect-block;
     width: 47%;
@@ -45,6 +89,15 @@
     vertical-align: top;
 }
 
+
+/*
+    Какая-то секция
+
+    markup:
+    <div class="faki-msection"><a>Какая-то ссылка</a>Какая-то инфа</div>
+
+    Styleguide Blocks.MSection.
+*/
 div.faki-msection {
     display: inline-block;
     box-sizing: border-box;
@@ -53,13 +106,26 @@ div.faki-msection {
     a {
         display: table;
         width: 100%;
-        padding: 20px;
+        padding: 10px;
         vertical-align: text-bottom;
         text-decoration: none;
         box-sizing: inherit;
     }
 }
 
+
+/*
+    Контейнеры для меню
+
+    Создает блок, внутри которого все элементы будут разделены на N колонок
+
+    markup:
+    <div class="faki-col1">col1</div>
+    <div class="faki-col2">col2</div>
+    <div class="faki-col3">col3</div>
+
+    Styleguide Blocks.ColMenu.
+*/
 @for $num from 1 through $max_num_columns {
   .faki-col#{$num} {
       @include clearfix();
