@@ -13,7 +13,6 @@ script:
     - npm run webpack:prod
     - npm run kss:prod
     - cp dest/styles.css docs/styles.css
-after_script:
     - tar -zcvf style_pack.tar.gz dest/
 deploy:
   - provider: pages
