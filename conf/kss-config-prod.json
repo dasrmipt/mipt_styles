@@ -1,6 +1,6 @@
 {
   "source": [
-    "src/scss"
+    "../src/scss"
   ],
   "destination":  "docs/",
   "css": [
