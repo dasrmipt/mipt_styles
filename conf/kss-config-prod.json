@@ -2,7 +2,7 @@
   "source": [
     "../src/scss"
   ],
-  "destination":  "docs/",
+  "destination":  "../docs/",
   "css": [
     "styles.css"
   ],
