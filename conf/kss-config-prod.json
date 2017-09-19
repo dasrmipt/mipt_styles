@@ -4,7 +4,7 @@
   ],
   "destination":  "docs/",
   "css": [
-    "styles.css",
+    "styles.css"
   ],
   "js": [
   ]
