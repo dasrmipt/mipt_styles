@@ -14,7 +14,7 @@ script:
     - npm run webpack:prod
     - npm run kss:prod
     - cp dest/styles.css docs/styles.css
-    - tar -zcvf style_pack.tar.gz dest/*
+    - cd dest/ && tar -zcvf ../style_pack.tar.gz . && cd ../
 deploy:
   - provider: pages
     skip_cleanup: true
