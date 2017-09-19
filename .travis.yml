@@ -1,0 +1,22 @@
+language: node_js
+node_js:
+    - "node"
+branches:
+  only:
+  - master
+cache:
+    directories:
+    - "node_modules"
+before_script:
+    - npm install
+script:
+    - npm run webpack:prod
+    - npm run kss:prod
+    - cp dest/styles.css docs/styles.css
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
+  local_dir: "docs"
+  on:
+    branch: master
